@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRAE ASSET</title>
+    <link rel="shortcut icon" href="./assets/img/1st.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/font-styles.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main-v2.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent z-10">
+        <div class="container-fluid">
+            <div class="d-flex nav-row">
+                <a class="navbar-brand text-white d-flex" href="#">
+                    <img src="./assets/img/logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#mustToggle" aria-controls="mustToggle"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="mustToggle">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white pb-0" aria-current="page" href="#">센터원</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pb-0" href="#">이용안내</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pb-0" href="#">서비스소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pb-0" href="#">임대문의</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pb-0" href="#">고객지원</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white pb-0" style="font-size: larger;" href="#">
+                            <i class="lni lni-globe-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" style="background-image: url('./assets/img/hero-img.png');">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+        <div class="text-container position-absolute text-white">
+            <img src="./assets/img/HeadTitle.svg" alt="">
+            <h6 class="hero-headline mt-4">
+                최고의 공간을 경험하세요
+            </h6>
+            <p class="fs-6 fw-lighter pe-1">국내를 넘어 세계의 무대를 준비하는 여러분들과 함께 합니다</p>
+        </div>
+    </section>
+    <section class="convenience">
+        <h3>
+            Convenience
+        </h3>
+        <p>미래에셋센터원에서 경험하는 <span>특별한 서비스</span></p>
+        <div class="convenience-card">
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/img/conv-1.jpg" alt="KF Gallery Image">
+                    <h2>KF GALLERY</h2>
+                    <p>
+                        국내외 방문객에게 전시회, 문화 행사, 교육 프로그램 등을 개최합니다.<br>
+                        국제 교류를 촉진하는 다양한 전시와 행사에 참여해보세요.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/conv-2.jpg" alt="센터원 웰니스 이미지">
+                    <h2>센터원 Wellness</h2>
+                    <p>
+                        피트니스, 골프GDR+, 필라테스, GX, 스피닝, 사우나, PT(퍼스널 트레이닝) 등을 운영합니다.<br>
+                        바쁜 일상과 업무에서 잠시 휴식을 취해보세요.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img/conv-3.jpg" alt="SPARKPLUS 이미지">
+                    <h2>SPARKPLUS</h2>
+                    <p>
+                        원하는 인원만큼 사용할 수 있는 맞춤형 오피스입니다.<br>
+                        일에만 집중할 수 있는 완벽한 공유 오피스를 만나보세요.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buildingCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators centers-indicators">
+            <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#buildingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active build-crs" style="background-image: url('./assets/img/build-1.jpg');">
+                <img src="./assets/img/build-title.svg" alt="">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <p class="mt-3">서울 청계천은 자연 그대로의 휴식과 재충전 공간이며, 점심시간과 퇴근길에 만나는 청계천의 여유로움은 <br> CENTER1 입주자 및 이용객이 누릴 수 있는
+                    특권입니다. 이용자를
+                    위한
+                    감성적인 요소뿐만 아니라,<br> 국내 최고 수준의 친환경 기준을 실천하여 국내외에서 친환경 건축물로 인증받았습니다.</p>
+                <button class="view-more-btn">
+                    View More <span class="arrow"></span>
+                </button>
+
+
+
+            </div>
+            <div class="carousel-item build-crs" style="background-image: url('./assets/img/build-2.jpg');">
+                <img src="./assets/img/build-title-2.svg" alt="">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <p class="mt-3">서울 청계천은 자연 그대로의 휴식과 재충전 공간이며, 점심시간과 퇴근길에 만나는 청계천의 여유로움은 <br> CENTER1 입주자 및 이용객이 누릴 수
+                    있는 특권입니다.
+                    이용자를
+                    위한
+                    감성적인 요소뿐만 아니라,<br> 국내 최고 수준의 친환경 기준을 실천하여 국내외에서 친환경 건축물로 인증받았습니다.</p>
+                <button class="view-more-btn">
+                    View More <span class="arrow"></span>
+                </button>
+
+            </div>
+            <div class="carousel-item build-crs" style="background-image: url('./assets/img/build-3.jpg');">
+                <img src="./assets/img/build-title-3.svg" alt="">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <p class="mt-3">서울 청계천은 자연 그대로의 휴식과 재충전 공간이며, 점심시간과 퇴근길에 만나는 청계천의 여유로움은 <br> CENTER1 입주자 및 이용객이 누릴 수
+                    있는 특권입니다.
+                    이용자를
+                    위한
+                    감성적인 요소뿐만 아니라,<br> 국내 최고 수준의 친환경 기준을 실천하여 국내외에서 친환경 건축물로 인증받았습니다.</p>
+                <button class="view-more-btn">
+                    View More <span class="arrow"></span>
+                </button>
+
+            </div>
+            <div class="carousel-item build-crs" style="background-image: url('./assets/img/build-4.jpg');">
+                <img src="./assets/img/build-title-4.svg" alt="">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <p class="mt-3">서울 청계천은 자연 그대로의 휴식과 재충전 공간이며, 점심시간과 퇴근길에 만나는 청계천의 여유로움은 <br> CENTER1 입주자 및 이용객이 누릴 수
+                    있는 특권입니다.
+                    이용자를
+                    위한
+                    감성적인 요소뿐만 아니라,<br> 국내 최고 수준의 친환경 기준을 실천하여 국내외에서 친환경 건축물로 인증받았습니다.</p>
+                <button class="view-more-btn">
+                    View More <span class="arrow"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <img src="./assets/img/logo.svg" alt="">
+
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <div class="dropdown-action">
+                        <button id="dropdownButton" class="dropdown-button">
+                            FAMILY SITE &nbsp;&nbsp;<i class="arrow-down"></i>
+                        </button>
+
+                        <div id="dropdownContent" class="dropdown-content">
+                            <a href="#">미래에셋증권</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>주소: 서울특별시 중구 수하동 67 미래에셋센터원 (서울특별시 중구 을지로 5길 26) <br>대표번호: 02-6030-0100</p>
+                <p class="mt-4">COPYRIGHT(C) 2011 MIRAE ASSET COPORATION. CO., Ltd. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

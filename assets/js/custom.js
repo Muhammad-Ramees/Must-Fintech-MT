@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       selector: '#centersCarousel',
       options: { interval: 1000, ride: 'carousel' }
+    },
+    {
+      selector: '#buildingCarousel',
+      options: { interval: 10000, ride: 'carousel' }
     }
   ]
 
@@ -55,3 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 })
+
+// window.onload = function () {
+//   window.scrollTo(0, 0)
+// }

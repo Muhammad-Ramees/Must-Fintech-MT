@@ -1,0 +1,240 @@
+body {
+    background-color: #222 !important;
+    color: white;
+}
+
+.navbar.scrolled {
+    background-color: #F58220 !important;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-section .text-container {
+    margin-left: 7rem;
+    margin-top: 8rem;
+}
+
+.hero-section .text-container img {
+    width: 70%;
+}
+
+.convenience {
+    padding: 6rem 5rem 6rem;
+}
+
+.convenience h3 {
+    font-weight: bold;
+}
+
+.convenience p span {
+    color: #F58220;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+    width: 30%;
+    margin: 10px;
+    text-align: start;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.convenience-card h2 {
+    font-weight: bold;
+}
+
+.convenience-card p {
+    font-weight: lighter;
+    font-size: x-small;
+}
+
+.convenience-card .card-container {
+    align-items: center;
+}
+
+.convenience-card .card:nth-child(2) {
+    margin-bottom: 4rem;
+}
+
+.convenience-card .card:nth-child(3) {
+    margin-bottom: 8rem;
+}
+
+.convenience-card .progress {
+    height: 1px;
+}
+
+.convenience-card .progress-bar {
+    width: 0;
+    transition: width 1s ease;
+    background-color: #F58220;
+
+}
+
+.convenience-card .card:hover h2 {
+    color: #F58220;
+    transition: color 0.3s ease-in-out;
+}
+
+.convenience-card .card:hover .progress-bar {
+    width: 50%;
+    background-color: #F58220;
+    box-shadow: none;
+}
+
+.convenience-card .card:hover .progress-bar::after {
+    content: '';
+    display: block;
+    background-color: #F58220;
+}
+
+.convenience-card .card:hover .progress-bar {
+    width: 50%;
+    background-color: #F58220;
+}
+
+.build-crs {
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 5rem 3rem;
+    height: 80vh;
+}
+
+.build-crs img {
+    width: 50%;
+}
+
+.build-crs .progress {
+    margin-top: 10rem;
+    width: 70%;
+    height: 2px;
+    background-color: #e0e0e06c;
+}
+
+.build-crs .progress-bar {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+.build-crs .view-more-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.build-crs .view-more-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: rgb(255, 255, 255);
+}
+
+.build-crs .arrow {
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.build-crs .view-more-btn:hover .arrow {
+    transform: translateX(5px) rotate(45deg);
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+
+@media (max-width: 992px) {
+    .hero-section .text-container {
+        margin-left: 2rem;
+    }
+
+    .convenience {
+        padding: 6rem 2rem 6rem;
+    }
+
+    .build-crs {
+        padding: 6rem 2rem 3rem;
+    }
+
+    .build-crs img {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+
+    .convenience-card .card:nth-child(1) {
+        margin-bottom: 3rem;
+    }
+
+    .convenience-card .card:nth-child(2) {
+        margin-bottom: 3rem;
+    }
+
+    .convenience-card .card:nth-child(3) {
+        margin-bottom: 1rem;
+    }
+
+    .build-crs {
+        padding: 4rem 2rem 3rem;
+        height: 90vh;
+    }
+
+    .build-crs .progress {
+        margin-top: 13rem;
+    }
+
+    .build-crs img {
+        width: 100%;
+    }
+
+}
